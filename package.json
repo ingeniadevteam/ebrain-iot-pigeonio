@@ -1,0 +1,17 @@
+{
+  "name": "@clysema/ebrain-iot-pigeonio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "joi": "^17.4.2",
+    "load-json-file": "^6.2.0",
+    "onoff": "^6.0.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
