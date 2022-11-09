@@ -12,6 +12,10 @@
     "onoff": "^6.0.3"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Víctor Navarro <v.navarro@camposcorporacion.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ingeniadevteam/ebrain-iot-pigeonio.git"
+  }
 }
