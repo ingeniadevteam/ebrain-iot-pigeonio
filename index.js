@@ -185,7 +185,7 @@ module.exports = async function (app) {
     return app.pigeonio.data;
   };
 
-  // the read function
+  // the write function
   app.pigeonio.write = async (output, value) => {
     if (app.pigeonio.state[`OUT_${output}`].gpio) {
       // set a gpio output
