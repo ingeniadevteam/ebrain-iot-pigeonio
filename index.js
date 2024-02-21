@@ -196,5 +196,5 @@ module.exports = async function (app) {
   };
 
   // first read
-  app.pigeonio.read();
+  await app.pigeonio.read();
 };
