@@ -1,6 +1,6 @@
 {
   "name": "@clysema/ebrain-iot-pigeonio",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {

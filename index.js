@@ -155,13 +155,11 @@ module.exports = async function (app) {
   app.pigeonio.read = async () => {
     if (!app.pigeonio.data) app.pigeonio.data = {};
 
-    if (process.env.NODE_ENV === 'development') {
-      const { dirname } = require('path');
-      const appDir = dirname(require.main.filename);
-      try {        
-        app.pigeonio.data = 
-          await require(`${appDir}/apps/${process.env.APP}/devdata/pigeonio.json`)
-        return app.pigeonio.data
+    if (process.env.NODE_ENV === 'development') {      
+      try {
+        const devData = await loadJsonFile(`devdata/pigeonio.json`);
+        if (devData) app.pigeonio.data = devData;
+        return devData;
       } catch (error) {
         return { IN: {}, OUT: {}}
       }
